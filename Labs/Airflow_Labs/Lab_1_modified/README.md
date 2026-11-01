@@ -13,7 +13,7 @@ load_data → validate_data ─┬─(pass)→ data_preprocessing → build_save
 
 - `validate_data` checks that the required columns exist, there are at least 100 rows, and no column has more than 5% missing values.
 - If the checks pass, the pipeline continues to training. If they fail, training is skipped and `report_bad_data` writes `working_data/validation_report.json`.
-- Updated the `PythonOperator` import for Airflow 2 (`airflow.operators.python`).
+- Updated the `PythonOperator` import for Airflow 2.
 
 
 ## Setup
