@@ -22,7 +22,7 @@ From this folder:
 
 ```bash
 mkdir -p ./logs ./plugins ./config ./working_data ./dags/model
-echo -e "AIRFLOW_UID=$(id -u)" > .env     # Windows: put AIRFLOW_UID=50000 in .env
+echo -e "AIRFLOW_UID=$(id -u)" > .env     
 docker compose up airflow-init
 docker compose up
 ```
